@@ -49,7 +49,7 @@ chai.use(chaiHttp);
 
 The first line requires `chai`, our assertion library. This gives us access to the chai object, and we can change the syntax with which we write our tests. Then we require `chai-http`. This module allows us make http requests from within our test file. Finally, we need a link to our app file. This is where any requests coming from our tests go to, and from there we can hit any of our routes, and see what get's returned.
 
-For today, I will be using the [should](http://chaijs.com/guide/styles/#should) style for my tests. Note that you can also use [expect](http://chaijs.com/guide/styles/#expect) or [assert](http://chaijs.com/guide/styles/#assert). These are simpy different ways of writing the same tests.
+For today, I will be using the [should](http://chaijs.com/guide/styles/#should) style for my tests. Note that you can also use [expect](http://chaijs.com/guide/styles/#expect) or [assert](http://chaijs.com/guide/styles/#assert). These are simply different ways of writing the same tests.
 
 Lastly, we tell chai to use `chaiHttp` so that we can make these http requests to our server.
 
@@ -269,8 +269,3 @@ it('should edit a show', function(done) {
 ### Conclusion/Next steps
 
 With testing, alot of this becomes repetition. Try going to one of your previous CRUD apps and setting up a test folder to test out your routes.
-
-
-
-
-
